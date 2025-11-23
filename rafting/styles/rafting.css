@@ -1,7 +1,21 @@
+/* ──────────────── RESET Y VARIABLES ──────────────── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: darkblue;
+  --accent-color: #333;
+  --background-light: #eee;
+}
+
 /* ──────────────── NAVEGACIÓN Y ENCABEZADO ──────────────── */
 nav {
-  background-color: darkblue;
+  background-color: var(--primary-color);
   padding: 10px;
+  text-align: center;
 }
 
 nav a {
@@ -34,6 +48,7 @@ img {
 
 p {
   padding: 10px;
+  line-height: 1.6;
 }
 /* ──────────────── HOME PAGE ENHANCEMENT STYLES ──────────────── */
 /* These styles were added for the Week 2 Prove assignment        */
@@ -44,7 +59,9 @@ p {
 
 /* ──────────────── MAIN Y ASIDE ──────────────── */
 main {
-  max-width: 840px;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem;
 }
 
 aside {
@@ -52,8 +69,8 @@ aside {
   margin: 1rem;
   border: 1px solid rgb(0 0 0 / 0.2);
   padding: 1rem;
-  background-color: #eee;
-  color: #333;
+  background-color: var(--background-light);
+  color: var(--accent-color);
   text-align: center;
 }
 
@@ -67,29 +84,12 @@ main img {
   height: auto;
 }
 
-p {
-  padding: 0;
-}
-
-
-
 /* ──────────────── HOME PAGE ENHANCEMENT STYLES ──────────────── */
 /* ...todo tu CSS actual... */
 
 /* ──────────────── REQUIRED STYLES FOR VALIDATION ──────────────── *
 
-/* ──────────────── RESET Y VARIABLES ──────────────── */
-{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 
-:root {
-  --primary-color: darkblue;
-  --accent-color: #333;
-  --background-light: #eee;
-}
 
 /* ──────────────── HERO Y OVERLAY ──────────────── */
 .hero {
@@ -98,9 +98,12 @@ p {
 
 .hero h1 {
   position: absolute;
-  top: 20px;
-  left: 20px;
+  font-size: 3rem;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
+  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
 }
 
 .hero article {
@@ -114,42 +117,9 @@ p {
   float: right;
   margin-left: 10px;
 }
-/* ──────────────── FOOTER Y REDES SOCIALES ──────────────── */
-footer {
-  margin-top: 15px;
-  border-top: 1px solid #000;
-  text-align: center;
-}
-.socialmedia a {
-  text-decoration: none;
-  margin: 0 10px;
-}
-
-.socialmedia img {
-  width: 30px;
-  height: 30px;
-}
-
-nav a {
-  color: white;
-}
-/* ──────────────── BODY Y TEXTO GENERAL ──────────────── */
-body {
-  font-family: 'Segoe UI', sans-serif;
-  background-color: var(--background-light);
-  color: var(--accent-color);
-  line-height: 1.6;
-}
-
 /* ──────────────── SECCIONES Y ESPACIADO ──────────────── */
 section {
   margin-bottom: 3rem;
-}
-
-main {
-  max-width: 960px;
-  margin: 0 auto;
-  padding: 2rem;
 }
 
 /* ──────────────── IMÁGENES CON ESTILO ──────────────── */
@@ -162,27 +132,37 @@ img {
   box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
-/* ──────────────── HERO CON OVERLAY ──────────────── */
-.hero h1 {
-  font-size: 3rem;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
-}
-
-/* ──────────────── FOOTER MEJORADO ──────────────── */
+/* ──────────────── FOOTER Y REDES SOCIALES ──────────────── */
 footer {
-  background-color: var(--primary-color);
+   background-color: var(--primary-color);
   color: white;
   padding: 1rem;
   margin-top: 3rem;
+  border-top: 1px solid #000;
+  text-align: center;
 }
-
 footer p {
   margin: 0.5rem 0;
 }
 
+.socialmedia a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
 .socialmedia img {
+  width: 30px;
+  height: 30px;
   filter: brightness(0) invert(1);
+}
+
+nav a {
+  color: white;
+}
+/* ──────────────── BODY Y TEXTO GENERAL ──────────────── */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: var(--background-light);
+  color: var(--accent-color);
+  line-height: 1.6;
 }
