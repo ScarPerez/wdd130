@@ -1,3 +1,4 @@
+/* ──────────────── NAVEGACIÓN Y ENCABEZADO ──────────────── */
 nav {
   background-color: darkblue;
   padding: 10px;
@@ -13,6 +14,7 @@ h1 {
   color: darkblue;
 }
 
+/* ──────────────── IMÁGENES Y TEXTO ──────────────── */
 img {
   width: 150px;
   height: auto;
@@ -30,6 +32,8 @@ p {
 /* Author: SCARLETT PÉREZ                                         */
 /* Date: November 2025                                            */
 /* ────────────────────────────────────────────────────────────── */
+
+/* ──────────────── MAIN Y ASIDE ──────────────── */
 main {
   max-width: 840px;
 }
@@ -58,8 +62,65 @@ p {
   padding: 0;
 }
 
+
+
+/* ──────────────── HOME PAGE ENHANCEMENT STYLES ──────────────── */
+/* ...todo tu CSS actual... */
+
+/* ──────────────── REQUIRED STYLES FOR VALIDATION ──────────────── *
+
+/* ──────────────── RESET Y VARIABLES ──────────────── */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --primary-color: darkblue;
+  --accent-color: #333;
+  --background-light: #eee;
+}
+
+/* ──────────────── HERO Y OVERLAY ──────────────── */
+.hero {
+  position: relative;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  color: white;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  color: white;
+}
+
+.hero article img {
+  float: right;
+  margin-left: 10px;
+}
+/* ──────────────── FOOTER Y REDES SOCIALES ──────────────── */
 footer {
   margin-top: 15px;
   border-top: 1px solid #000;
   text-align: center;
+}
+.socialmedia a {
+  text-decoration: none;
+  margin: 0 10px;
+}
+
+.socialmedia img {
+  width: 30px;
+  height: 30px;
+}
+
+nav a {
+  color: white;
 }
