@@ -19,7 +19,8 @@ nav a:hover {
 }
 
 h1 {
-  color: darkblue;
+  color: var(--primary-color);
+
 }
 
 /* ──────────────── IMÁGENES Y TEXTO ──────────────── */
@@ -78,7 +79,7 @@ p {
 /* ──────────────── REQUIRED STYLES FOR VALIDATION ──────────────── *
 
 /* ──────────────── RESET Y VARIABLES ──────────────── */
-* {
+{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -135,8 +136,8 @@ nav a {
 /* ──────────────── BODY Y TEXTO GENERAL ──────────────── */
 body {
   font-family: 'Segoe UI', sans-serif;
-  background-color: #f9f9f9;
-  color: #333;
+  background-color: var(--background-light);
+  color: var(--accent-color);
   line-height: 1.6;
 }
 
