@@ -12,11 +12,11 @@
 </head>
 
 <body>
-    <header>
-        <img src="images/profile.jpg" alt="Rafting Xtreme logo">
-        <nav>
+    <header class="site-header">
+        <img src="images/profile.jpg" alt="Rafting Xtreme logo" class="logo">
+        <nav class="site-nav">
             <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
+            <a href="about.html" aria-current="page">About Us</a>
             <a href="trips.html">Trips</a>
             <a href="contact.html">Contact Us</a>
         </nav>
@@ -24,43 +24,73 @@
 
 
     <main>
-        <div class="hero">
-            <img src="images/guatemala.jpg" alt="Rafting landscape in Guatemala">
-            <h1>Rafting Xtreme</h1>
-            <article>
-                <img src="images/rafting-team.jpg" alt="Rafting team in action">
-                <p>We are passionate about adventure, teamwork, and exploring Guatemala’s wild rivers. Our guides are
-                    trained to
-                    deliver unforgettable experiences in nature.</p>
-            </article>
-        </div>
+        <section class="hero">
+            <h1>White Water Rafting</h1>
+            <div class="hero-content">
+                <div>
+                    <p>We are passionate about adventure, teamwork, and exploring Guatemala’s wild rivers. Our guides
+                        are
+                        trained to
+                        deliver unforgettable experiences in nature.</p>
 
-        <section>
-            <h2>History</h2>
-            <p>Guatemala is a country full of culture, volcanoes, and vibrant scenery. Its rhythm inspires our visual
-                design and
-                fuels our passion for rafting. Rafting Xtreme was founded in 2015 to bring thrilling river adventures to
-                this
-                beautiful land.</p>
-            <img src="images/rafting-river.jpg" alt="Rafting on a river in Guatemala">
-
+                </div>
+                <div>
+                    <img src="images/rafting-team.jpg" alt="Rafting team in action">
+                    <p>Rafting Xtreme</p>
+                </div>
+            </div>
         </section>
 
-        <section>
+        <section class="history">
+            <h2>Our History</h2>
+            <div class="history-grid">
+                <div>
+                    <p>Extreme X adventure is full of outdoor adventure, and nature scenery. We bring families and
+                        friends together with fun
+                        and extreme rafting. Rafting Xtreme has been rafting since 1998 and bringing new and extreme
+                        thrills to the world.</p>
+                </div>
+                <figure>
+                    <img src="images/rafting-river.jpg" alt="Rafting on a river in Guatemala">
+                    <figcaption>Early days on the river</figcaption>
+                </figure>
+                <div>
+                    <p>We offer the best rafting experience and memories that will last a lifetime.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="adventures">
             <h2>Adventure Awaits You!</h2>
-            <p>Join us for unforgettable rafting experiences through stunning landscapes and wild waters. Whether you're
-                a
-                beginner or a thrill-seeker, we have the perfect trip for you.</p>
-            <img src="images/equipment.jpg" alt="Rafting safety equipment">
+            <div class="adventure-strip">
+                <figure>
+                    <img src="images/adventure1.jpg" alt="Los Dientes del Diablo rapid">
+                    <figcaption>Los Dientes del Diablo</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure2.jpg" alt="Big Mallard rapid">
+                    <figcaption>Big Mallard</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure3.jpg" alt="Half Day Adventure">
+                    <figcaption>Half Day Adventure</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure4.jpg" alt="Sunset Canyon run">
+                    <figcaption>Sunset Canyon</figcaption>
+                </figure>
+                <figure>
+                    <img src="images/adventure5.jpg" alt="Thunder Falls rapid">
+                    <figcaption>Thunder Falls</figcaption>
+                </figure>
+            </div>
         </section>
 
     </main>
 
-
-
-    <footer>
+    <footer class="site-footer">
         <p>&copy; 2025 ✨ SCARLETT PÉREZ ✨ Guatemala</p>
-        <nav class="socialmedia">
+        <div class="social">
             <a href="https://facebook.com" target="_blank">
                 <img src="images/facebook.png" alt="Facebook logo">
             </a>
@@ -70,7 +100,7 @@
             <a href="https://twitter.com" target="_blank">
                 <img src="images/twitter.png" alt="Twitter logo">
             </a>
-        </nav>
+        </div>
     </footer>
 
 </body>

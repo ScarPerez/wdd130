@@ -12,25 +12,6 @@
 }
 
 /* ──────────────── NAVEGACIÓN Y ENCABEZADO ──────────────── */
-nav {
-  background-color: var(--primary-color);
-  padding: 10px;
-  text-align: center;
-}
-
-nav a {
-  color: white;
-  text-decoration: none;
-  display: inline-block;
-  margin: 0 1rem;
-  padding: 0.5rem 1rem;
-  font-weight: bold;
-  transition: color 0.3s ease;
-
-}
-nav a:hover {
-  color: #ffcc00;
-}
 
 h1 {
   color: var(--primary-color);
@@ -38,13 +19,6 @@ h1 {
 }
 
 /* ──────────────── IMÁGENES Y TEXTO ──────────────── */
-img {
-  width: 150px;
-  height: auto;
-  border: 1px solid black;
-  padding: 2px;
-  box-shadow: 0 0 30px gray;
-}
 
 p {
   padding: 10px;
@@ -64,21 +38,6 @@ main {
   padding: 2rem;
 }
 
-aside {
-  width: 20rem;
-  margin: 1rem;
-  border: 1px solid rgb(0 0 0 / 0.2);
-  padding: 1rem;
-  background-color: var(--background-light);
-  color: var(--accent-color);
-  text-align: center;
-}
-
-aside img {
-  width: 200px;
-  height: auto;
-}
-
 main img {
   width: 150px;
   height: auto;
@@ -94,28 +53,49 @@ main img {
 /* ──────────────── HERO Y OVERLAY ──────────────── */
 .hero {
   position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  padding: 1rem;
 }
 
 .hero h1 {
-  position: absolute;
-  font-size: 3rem;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+  text-align: center;
+  font-size: 2.5rem;
+  color: var(--primary-color);
+  margin-bottom: 1rem;
+
+}
+
+.hero-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+}
+
+.hero-content img {
+  width: 100%;
+  border-radius: 8px;
 }
 
 .hero article {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
 }
 
 .hero article img {
-  float: right;
-  margin-left: 10px;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.hero article p {
+  font-size: 1rem;
+  color: var(--accent-color);
 }
 /* ──────────────── SECCIONES Y ESPACIADO ──────────────── */
 section {
@@ -133,14 +113,7 @@ img {
 }
 
 /* ──────────────── FOOTER Y REDES SOCIALES ──────────────── */
-footer {
-   background-color: var(--primary-color);
-  color: white;
-  padding: 1rem;
-  margin-top: 3rem;
-  border-top: 1px solid #000;
-  text-align: center;
-}
+
 footer p {
   margin: 0.5rem 0;
 }
@@ -165,4 +138,146 @@ body {
   background-color: var(--background-light);
   color: var(--accent-color);
   line-height: 1.6;
+}
+/* ──────────────── HEADER CON GRID ──────────────── */
+.site-header {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--primary-color); /* azul */
+  color: white;
+}
+.logo {
+  width: 60px;
+  height: auto;
+}
+.site-header .logo {
+  width: 60px;
+  height: auto;
+}
+
+/* ──────────────── NAV CON FLEX ──────────────── */
+.site-nav {
+  display: flex;
+  justify-content: flex-end;
+  gap: 1rem;
+}
+.site-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 0.5rem;
+}
+.site-nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+.site-nav a:focus-visible {
+  outline: 3px solid #ffcc00;
+  outline-offset: 2px;
+}
+.site-nav a[aria-current="page"] {
+  color: #ffcc00;
+  font-weight: bold;
+}
+
+/* ──────────────── HISTORY SECTION ──────────────── */
+.history h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.history-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+.history-grid figure {
+  margin: 0;
+  background: var(--background-light);
+  border-radius: 8px;
+  overflow: hidden;
+}
+.history-grid img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.history-grid figcaption {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--accent-color);
+  text-align: center;
+}
+
+/* ──────────────── ADVENTURES STRIP ──────────────── */
+.adventures h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.adventure-strip {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  gap: 1rem;
+}
+.adventure-strip figure {
+  text-align: center;
+}
+.adventure-strip img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+.adventure-strip figcaption {
+  padding: 0.5rem;
+  font-size: 0.85rem;
+  text-align: center;
+  color: var(--accent-color);
+}
+
+/* ──────────────── FOOTER CON GRID ──────────────── */
+.site-footer {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.site-footer p {
+  text-align: center;
+}
+
+.site-footer .social {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-end;
+}
+.site-footer img {
+  width: 28px;
+  height: 28px;
+  filter: brightness(0) invert(1);
+}
+
+/* ──────────────── RESPONSIVE ──────────────── */
+@media (max-width: 900px) {
+  .history-grid {
+    grid-template-columns: 1fr;
+  }
+  .adventure-strip {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+@media (max-width: 600px) {
+  .adventure-strip {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .site-nav {
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
 }
