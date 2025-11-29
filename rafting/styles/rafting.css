@@ -281,3 +281,10 @@ body {
     flex-wrap: wrap;
   }
 }
+
+iframe {
+  display: block;
+  margin: 2rem auto;
+  max-width: 100%;
+  border-radius: 8px;
+}
