@@ -1,28 +1,43 @@
+:root {
+    --primary-color: darkblue;
+    --secondary-color: white;
+    --border-color: black;
+    --shadow-color: gray;
+    --aside-background: #eeeeee;
+    --text-color: #333;
+
+    --standard-padding: 1rem;
+    --small-padding: 10px;
+    --large-padding: 20px;
+
+    --main-width: 800px;
+}
+
 nav {
-    background-color: darkblue;
-    padding: 10px;
+    background-color: var(--primary-color);
+    padding: var(--small-padding)
 }
 
 nav a {
-    color: white;
-    display: block;
-    padding: 20px;
+    color: var(--secondary-color) display: block;
+    padding: var(--large-padding)
 }
 
 h1 {
-    color: darkblue;
+    color: var(--primary-color)
 }
 
 main {
-    max-width: 800px;
+    max-width: var(--main-width);
 }
 
 main img {
     width: 150px;
     height: auto;
-    border: 1px solid black;
+    border: 1px solid var(--border-color);
     padding: 2px;
-    box-shadow: 0 0 30px gray;
+    box-shadow: 0 0 30px var(--shadow-color);
+}
 }
 
 p {
@@ -31,11 +46,9 @@ p {
 
 aside {
     width: 20rem;
-    margin: 1rem;
-    border: 1px solid black;
-    padding: 1rem;
-    background-color: #eeeeee;
-    color: #333;
+    margin: var(--satndard-padding) border: 1px solid var(--border-color) padding: 1rem;
+    background-color: var(--aside-background);
+    color: var(--text-color)
 }
 
 aside img {
@@ -44,7 +57,6 @@ aside img {
 }
 
 footer {
-    margin-top: 1rem;
-    border-top: 1px solid #000;
+    margin-top: var(--standar-panding) border-top: 1px solid var(--border-color);
     text-align: center;
 }
