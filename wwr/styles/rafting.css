@@ -45,7 +45,7 @@ header {
     grid-template-columns: 200px 1fr;
     align-items: center;
 
-    background-color: #d8c8f0;
+    background-color: var(--primary-color);
 }
 
 header img {
@@ -59,8 +59,12 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: var(--primary-color);
+    color: var(--secondary-color);
     font-weight: bold;
+}
+
+nav a:hover {
+    color: var(--accent2-color);
 }
 
 .hero {
@@ -120,7 +124,9 @@ footer {
 
     align-items: center;
 
-    background-color: #d8c8f0;
+    background-color: var(--primary-color);
+
+    color: var(--accent2-color);
 }
 
 .socialmedia a {
