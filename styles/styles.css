@@ -1,95 +1,129 @@
+/* UNIVERSAL SELECTOR */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* ROOT VARIABLES */
 :root {
-    --primary-color: darkblue;
-    --secondary-color: white;
-    --border-color: black;
+    --primary-color: #14213d;
+    --secondary-color: #ffffff;
+    --accent-color: #fca311;
+    --border-color: #000000;
     --shadow-color: gray;
     --aside-background: #eeeeee;
     --text-color: #333;
 
     --standard-padding: 1rem;
-    --small-padding: 10px;
     --large-padding: 20px;
 
-    --main-width: 800px;
+    --main-width: 840px;
 }
 
+/* BODY */
+body {
+    font-family: Arial, sans-serif;
+    color: var(--text-color);
+    background-color: #f5f5f5;
+}
+
+/* NAVIGATION */
 nav {
     background-color: var(--primary-color);
-    padding: var(--small-padding) display: flex;
+    display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding: 1rem;
+
 }
 
 nav a {
-    color: var(--secondary-color) display: block;
-    padding: var(--large-padding) text-decoration: none;
+    color: var(--secondary-color);
+
+    text-decoration: none;
+
     font-weight: bold;
-    align-items: center;
+
+    font-size: 18px;
+
+    padding: 10px;
 }
 
-h1 {
-    color: var(--primary-color) margin-bottom: 1rem;
+nav a:hover {
+    color: var(--accent-color);
 }
 
+/* MAIN */
 main {
     max-width: var(--main-width);
     margin: 1rem auto;
     padding: 1rem;
 }
 
+/* HEADING */
+h1 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    border-bottom: 2px solid var(--accent-color);
+    padding-bottom: 10px;
+}
+
+/* PROFILE IMAGE */
 main img {
     float: right;
     width: 150px;
     height: auto;
     border: 1px solid var(--border-color);
-    padding: 2px;
-    box-shadow: 0 0 30px var(--shadow-color);
+    padding: 3px;
+    box-shadow: 0 0 20px var(--shadow-color);
     margin-left: 1rem;
 }
-}
 
+/* PARAGRAPHS */
 p {
-    padding: 0;
+    line-height: 1.5;
+    margin-bottom: 1rem;
 }
 
+/* ASIDE */
 aside {
     position: relative;
     width: 20rem;
-    margin: 1rem auto;
+    margin: 2rem auto;
     border: 1px solid var(--border-color);
     padding: 1rem;
     background-color: var(--aside-background);
-    color: var(--text-color) text-align: center;
+    text-align: center;
 }
 
+/* ASIDE HEADING OVERLAY */
 aside h2 {
     position: absolute;
-    top: 30px;
+    top: 20px;
     left: 70px;
     color: white;
+    text-shadow: 2px 2px 5px black;
 }
 
+/* ASIDE IMAGE */
 aside img {
-    width: 200px;
+    width: 100%;
     height: auto;
 }
 
+/* FOOTER */
 footer {
-    margin-top: var(--standar-panding) border-top: 1px solid var(--border-color);
+    margin-top: 2rem;
+    border-top: 1px solid var(--border-color);
     text-align: center;
     padding: 1rem;
 }
 
+/* CLASS SELECTORS */
 .box {
     margin: 1rem;
     border: 1px solid var(--border-color);
     padding: 1rem;
-    background-color: #f0f0f0;
-    color: var(--text-color);
+    background-color: #e9ecef;
 }
