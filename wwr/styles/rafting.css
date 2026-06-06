@@ -179,3 +179,82 @@ footer {
     margin-top: 5px;
     font-size: 0.9rem;
 }
+
+/* CONTACT PAGE */
+
+main h1 {
+    margin: 1rem 0;
+}
+
+fieldset label {
+    display: block;
+    margin: 0.5rem 0;
+}
+
+.contact-info {
+    text-align: center;
+}
+
+.contact-info iframe {
+    width: 100%;
+    height: 300px;
+    border: none;
+    margin-top: 1rem;
+}
+
+.employees {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.employees figure {
+    border: none;
+}
+
+.employees img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+}
+
+.contact-form {
+    max-width: 800px;
+    margin: 2rem auto;
+}
+
+.contact-form form {
+    display: grid;
+    gap: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    font-size: 1rem;
+}
+
+.contact-form fieldset {
+    padding: 1rem;
+}
+
+.contact-form button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    opacity: 0.9;
+}
+
+.newsletter {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
