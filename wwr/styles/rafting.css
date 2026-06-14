@@ -21,7 +21,8 @@ body {
 header,
 main,
 footer {
-    width: 1000px;
+    max-width: 1000px;
+    width: 100%;
     margin: 0 auto;
 }
 
@@ -63,7 +64,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--accent2-color);
+    opacity: 0.7;
 }
 
 .hero {
@@ -324,10 +325,9 @@ fieldset label {
 
 .trip-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 1rem;
     padding: 2rem;
-    text-align: center;
 }
 
 .trip-grid img {
@@ -350,4 +350,14 @@ fieldset label {
     border: 1px solid #ccc;
     padding: 0.75rem;
     text-align: center;
+}
+
+.home-grid img,
+.trip-grid img {
+    border-radius: 8px;
+}
+
+.cta-button:hover,
+.trip-contact a:hover {
+    opacity: 0.8;
 }
